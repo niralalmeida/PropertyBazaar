@@ -12,6 +12,60 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_cd115e9d1080c903f0513e06b2a235cd4803b9b0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_bb8d1258bf5fe5e80229aa257a08aad99299ab68\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_0f47476e902dd4e71e6c7ce1db2cf2aeadc969e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756a8a3ba5c5b4f0d9b80781581514e667a1e61f">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e0bb896c10f6c171d2c4eea494584cb1c072a996\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0afa6edcbff08074e03cc165a5f96e36bd4926b1">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1c7b4724b67698d34245cb5f903f800396f3243f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_a0da0551a471340b8155be0c0a333ae54e570c53\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -27,15 +81,6 @@
         revision="25.0.2"
         sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
         <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_b375098319662336333745eca4bf81a9354f3aa6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_cd115e9d1080c903f0513e06b2a235cd4803b9b0\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,30 +111,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_bb8d1258bf5fe5e80229aa257a08aad99299ab68\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\rudol\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
         <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_7d6b341b60246775a3037905f5319c6f23689730\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_0f47476e902dd4e71e6c7ce1db2cf2aeadc969e7\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -102,15 +129,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f501be0c75688c4119a76eb567819a2cf40d40cb">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e0bb896c10f6c171d2c4eea494584cb1c072a996\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -120,30 +138,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2624a21b026af1b2190a730ec6b0a419ad062eee">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1c7b4724b67698d34245cb5f903f800396f3243f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
         <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_2f84a4100f63abcd0172483b908496d7a4b59f6f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_a0da0551a471340b8155be0c0a333ae54e570c53\classes.dex" />
     </item>
 
 </items>
