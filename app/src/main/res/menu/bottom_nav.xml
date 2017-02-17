@@ -4,25 +4,25 @@
     <item
         android:id="@+id/action_browse"
         android:enabled="true"
-        android:title="Browse"
+        android:title="@string/action_browse"
         android:icon="@mipmap/ic_cart_outline_black_36dp"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_add_new"
         android:enabled="true"
-        android:title="New"
+        android:title="@string/action_new"
         android:icon="@mipmap/ic_library_plus_black_36dp"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_compare"
         android:enabled="true"
-        android:title="Compare"
+        android:title="@string/action_compare"
         android:icon="@mipmap/ic_chart_bar_black_36dp"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_profile"
         android:enabled="true"
-        android:title="Profile"
+        android:title="@string/action_profile"
         android:icon="@mipmap/ic_account_black_36dp"
         app:showAsAction="ifRoom" />
 </menu>

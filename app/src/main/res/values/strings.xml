@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Property Bazaar</string>
+    <string name="action_browse">Browse</string>
+    <string name="action_new">New</string>
+    <string name="action_compare">Compare</string>
+    <string name="action_profile">Profile</string>
 </resources>
