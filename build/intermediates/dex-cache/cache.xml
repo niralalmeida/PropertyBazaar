@@ -3,111 +3,93 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.1_e11b8fdf503af2da7d09be693d606dc01affadfc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_cd115e9d1080c903f0513e06b2a235cd4803b9b0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_bb8d1258bf5fe5e80229aa257a08aad99299ab68\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_0f47476e902dd4e71e6c7ce1db2cf2aeadc969e7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4168e75acac1f9dc4d8b86c840db40aa9cd05ae1">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e0bb896c10f6c171d2c4eea494584cb1c072a996\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="65b6e6f1b4ace9767c1aa70536a4f0208c364e77">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1c7b4724b67698d34245cb5f903f800396f3243f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_a0da0551a471340b8155be0c0a333ae54e570c53\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.1.1_1f1da3146c787bf8276286974247522bdfa8fd93\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_b375098319662336333745eca4bf81a9354f3aa6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jar="C:\Users\rudol\.android\build-cache\5558b50c81d1d7054b84a22a0ebcf31e11c499fb\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_e05138d988ac1ce8a0a0ad74087ce61259ea34b6\classes.dex" />
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_51253adb95c67bd45e83ad89c8cad1c31474557c\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jar="C:\Users\rudol\.android\build-cache\e5c242401aa738f3f5bc47220d8ad5543b438065\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_33705e95437788e0126d29a0dc55a99dad9c0dd8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\b9ba0d8df9d1934fb8d7e72539092733b3f2910b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9402e341ba603d4d1a5e45afe5641da1e980570d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_e191e85005972824f323d946a43712caeeb4e6a6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.2.0\41e67dba73c3347e4503761642c39d0e06ca1f2\retrofit-2.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="041e67dba73c3347e4503761642c39d0e06ca1f2">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.2.0_c282b58bb6e882652929231148a26feb86c78864\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\587a44da0a8f37e23059d1b4e273b68fb2d24b9f\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.1_6bfceaa138bae66a83bb851bb2cb6d3978deccce\classes.dex" />
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_087222cda3d3558c66a540a52ac1f20bc03e3b89\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jar="C:\Users\rudol\.android\build-cache\141fc5f739e91880707142ad595bee17ce5ccfd2\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_b23bc8260f34e7cc6261765966bad2de5745dd3a\classes.dex" />
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c6abc3ceda8758a93e5b48b5002957fdc29745aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\4a04bc13c10695dbd4c12b4a4fb1d32877c552ac\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2823b1929ad14fbc0dd031d84fc05b5e22c5f6b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_b8eb46a41f7210feddb42a7e3586ee6c79b8c3a4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.6.0_7417592816d32c70032aaf84dac4bb3f16b870de\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -120,30 +102,102 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jar="C:\Users\rudol\.android\build-cache\cf0b69a3bee9b0d5012690eb48466504c10fba7b\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_d052a745f8a832e447fd1b050361281c96bb5bcd\classes.dex" />
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b21a82bba9f5dc1de0eeb753c58e770c5db48372\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\jars\classes.jar"
+        jar="C:\Users\rudol\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.11.0_b07e12e7f9cfca38318c44d2b4ea4fd488f87941\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e0bb896c10f6c171d2c4eea494584cb1c072a996\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\d62074367f67077550718310bb1fb13416c29b0d\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.1_84ff0980cbb6e95d7da2337609c1d196a4085adc\classes.dex" />
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f7682fc33d8e9c1862c4a467df0889281f35cb20\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jar="C:\Users\rudol\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.2.0\a09926806199499a20b2f5168779499abfa33342\converter-gson-2.2.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_2f84a4100f63abcd0172483b908496d7a4b59f6f\classes.dex" />
+        sha1="a09926806199499a20b2f5168779499abfa33342">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.2.0_639626b2f863d085f82118be347cef944c601b1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\c1fb172dcd90811fbcb9f9f400b8936742ef0b77\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ccaadb356adacbaf4075d84b2a5993a7adc13ce6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\5b97ae8943d91e27788d4c5882f71f3cc2f2716e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_360d868a311b4d459e3c7130f9a22fcd59bca042\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\3d3399d177c665361bb29f91ea70450706dbcdc8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2ddc14e4e4b9b9ad36478f9f61e60e1285376772\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dff5d5f9f254c8fb33ad84247c0f061c98685019">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1c7b4724b67698d34245cb5f903f800396f3243f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\92a31816db3bf3c17c1a3a6a5e79795e54b13fbf\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_039d32ad2dc6063b03e6cfb365c9d196f8b85a83\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\fdeb373a047cd67119619e19976fa4e229e37c02\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_837c37a6b5369fdb76fdaa63e5e82d5eb46a69dd\classes.dex" />
     </item>
 
 </items>
