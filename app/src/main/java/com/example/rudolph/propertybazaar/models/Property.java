@@ -20,23 +20,6 @@ public class Property {
     @SerializedName("city")
     private String city;
 
-    public Property(String title, String description, String address, String city, String propertytype, int rooms, int bathrooms, int bedrooms, int garages, int area, String image, String owner, String created, int price) {
-        this.title = title;
-        this.description = description;
-        this.address = address;
-        this.city = city;
-        this.propertytype = propertytype;
-        this.rooms = rooms;
-        this.bathrooms = bathrooms;
-        this.bedrooms = bedrooms;
-        this.garages = garages;
-        this.area = area;
-        this.image = image;
-        this.owner = owner;
-        this.created = created;
-        this.price = price;
-    }
-
     @SerializedName("propertytype")
     private String propertytype;
 
@@ -69,6 +52,23 @@ public class Property {
 
     @SerializedName("price")
     private int price;
+
+    public Property(String title, String description, String address, String city, String propertytype, int rooms, int bathrooms, int bedrooms, int garages, int area, String image, String owner, String created, int price) {
+        this.title = title;
+        this.description = description;
+        this.address = address;
+        this.city = city;
+        this.propertytype = propertytype;
+        this.rooms = rooms;
+        this.bathrooms = bathrooms;
+        this.bedrooms = bedrooms;
+        this.garages = garages;
+        this.area = area;
+        this.image = image;
+        this.owner = owner;
+        this.created = created;
+        this.price = price;
+    }
 
     public String getTitle() {
         return title;

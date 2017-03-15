@@ -14,13 +14,13 @@ import retrofit2.http.Path;
 
 public interface APIInterface {
 
-    @GET("user/{id}")
-    Call<User> getUsers(@Path("id") int id);
+    @GET("user/{id}/")
+    Call<User> getUser(@Path("id") int id);
 
     @GET("property/")
     Call<PropertyResponse> getProperties();
 
-    @GET("property/{id}")
+    @GET("property/{id}/")
     Call<Property> getProperty(@Path("id") int id);
 
 }
