@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -18,6 +20,7 @@ import com.example.rudolph.propertybazaar.rest.APIClient;
 import com.example.rudolph.propertybazaar.rest.APIInterface;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -28,9 +31,11 @@ import retrofit2.Response;
  * Created by Rudolph Almeida on 3/12/2017.
  */
 
+// TODO (2) Implement Filtering of properties
 public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.PropertyViewHolder> {
 
     private List<Property> properties;
+    private List<Property> filteredProperties;
     private int rowLayout;
     private Context context;
     private APIInterface apiservice;
@@ -40,6 +45,7 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
         this.properties = properties;
         this.rowLayout = rowLayout;
         this.context = context;
+        this.filteredProperties = new ArrayList<>();
 
         apiservice = APIClient.getClient().create(APIInterface.class);
     }
@@ -53,7 +59,7 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
     @Override
     public void onBindViewHolder(final PropertyViewHolder holder, final int position) {
 
-        final boolean isExpanded = position == mExpandedPosition;
+        final boolean isExpanded = (position == mExpandedPosition);
         holder.detailView.setVisibility(isExpanded ? View.VISIBLE : View.GONE);
         holder.itemView.setActivated(isExpanded);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +79,7 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
         holder.price.setText(Integer.toString(properties.get(position).getPrice()));
         holder.rooms.setText(Integer.toString(properties.get(position).getRooms()));
         holder.description.setText(properties.get(position).getDescription());
-        holder.area.setText(Integer.toString(properties.get(position).getArea()) + " sq. feet.");
+        holder.area.setText(Integer.toString(properties.get(position).getArea()));
 
         final String userUrl = properties.get(position).getOwner();
         int id = Integer.parseInt(userUrl.substring(46, userUrl.lastIndexOf('/')));

@@ -6,6 +6,8 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -25,6 +27,7 @@ public class BrowseProperty extends Activity {
 
     private BottomNavigationView bottomNavigationView;
     private ImageView internetError;
+    private PropertyAdapter adapter;
 
     public static final String TAG = BrowseProperty.class.getSimpleName();
 
@@ -51,7 +54,8 @@ public class BrowseProperty extends Activity {
                 int statusCode = response.code();
                 List<Property> properties = response.body().getResults();
                 internetError.setVisibility(View.INVISIBLE);
-                recyclerView.setAdapter(new PropertyAdapter(properties, R.layout.propery_card, getApplicationContext()));
+                adapter = new PropertyAdapter(properties, R.layout.propery_card, getApplicationContext());
+                recyclerView.setAdapter(adapter);
             }
 
             @Override
@@ -61,5 +65,14 @@ public class BrowseProperty extends Activity {
             }
         });
 
+    }
+
+    // TODO (1) Implement Filter Menu
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+
+
+        return true;
     }
 }

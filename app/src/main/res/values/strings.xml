@@ -4,4 +4,6 @@
     <string name="action_new">New</string>
     <string name="action_compare">Compare</string>
     <string name="action_profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="search_property">Search for Property</string>
 </resources>
