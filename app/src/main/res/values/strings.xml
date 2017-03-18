@@ -4,6 +4,18 @@
     <string name="action_new">New</string>
     <string name="action_compare">Compare</string>
     <string name="action_profile">Profile</string>
+    <string name="filter">Filter</string>
     <string name="search">Search</string>
-    <string name="search_property">Search for Property</string>
+    <string name="filter_property">Filter Properties</string>
+    <string name="input_price">Enter Price</string>
+    <string name="input_bedrooms">Enter Number of Bedrooms</string>
+    <string name="input_bathrooms">Enter Number of Bathrooms</string>
+    <string name="input_garages">Enter Number of Garages</string>
+    <string name="input_area">Enter Area in sq feet</string>
+    <string name="input_city">Enter City</string>
+    <string name="input_rooms">Enter Number of Rooms</string>
+    <string-array name="city_array">
+        <item>Mumbai</item>
+        <item>Pune</item>
+    </string-array>
 </resources>

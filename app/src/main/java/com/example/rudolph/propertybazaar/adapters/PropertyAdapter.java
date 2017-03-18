@@ -31,21 +31,20 @@ import retrofit2.Response;
  * Created by Rudolph Almeida on 3/12/2017.
  */
 
-// TODO (2) Implement Filtering of properties
 public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.PropertyViewHolder> {
 
-    private List<Property> properties;
-    private List<Property> filteredProperties;
+    private List<Property> properties = new ArrayList<>();
+    private List<Property> allProperties = new ArrayList<>();
     private int rowLayout;
     private Context context;
     private APIInterface apiservice;
     private int mExpandedPosition = -1;
 
     public PropertyAdapter(List<Property> properties, int rowLayout, Context context) {
-        this.properties = properties;
+        this.properties.addAll(properties);
+        this.allProperties.addAll(this.properties);
         this.rowLayout = rowLayout;
         this.context = context;
-        this.filteredProperties = new ArrayList<>();
 
         apiservice = APIClient.getClient().create(APIInterface.class);
     }
@@ -83,14 +82,11 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
 
         final String userUrl = properties.get(position).getOwner();
         int id = Integer.parseInt(userUrl.substring(46, userUrl.lastIndexOf('/')));
-        Log.d("Parsed User Id", Integer.toString(id));
 
         Call<User> call = apiservice.getUser(id);
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
-                //User user = response.body();
-                Log.d("Property Adapter", response.body().toString());
                 holder.owner_name.setText("Owner: " + response.body().getFirst_name() + " " + response.body().getLast_name());
                 holder.owner_email.setText("Email: " + response.body().getEmail());
             }
@@ -108,6 +104,34 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
     @Override
     public int getItemCount() {
         return properties.size();
+    }
+
+    public void filterProperties(Property p) {
+
+        properties.clear();
+        if (p == null) {
+            properties.addAll(allProperties);
+            notifyDataSetChanged();
+            return;
+        }
+
+        for (Property property: allProperties) {
+
+            if ((property.getArea() >= p.getArea())
+                    && (property.getBathrooms() >= p.getBathrooms())
+                    && (property.getBedrooms() >= p.getBedrooms())
+                    && (property.getGarages() >= p.getGarages())
+                    && (property.getPrice() <= p.getPrice())
+                    && (property.getRooms() >= p.getRooms())
+                    && (property.getCity().equals(p.getCity()))) {
+
+                properties.add(property);
+            }
+
+        }
+
+        notifyDataSetChanged();
+
     }
 
     public static class PropertyViewHolder extends RecyclerView.ViewHolder {
