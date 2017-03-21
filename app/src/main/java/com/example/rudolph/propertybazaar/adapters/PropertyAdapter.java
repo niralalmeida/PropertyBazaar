@@ -123,7 +123,7 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
                     && (property.getGarages() >= p.getGarages())
                     && (property.getPrice() <= p.getPrice())
                     && (property.getRooms() >= p.getRooms())
-                    && (property.getCity().equals(p.getCity()))) {
+                    && p.getCity().equals("All") || p.getCity().equals(property.getCity())) {
 
                 properties.add(property);
             }
@@ -133,6 +133,7 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
         notifyDataSetChanged();
 
     }
+
 
     public static class PropertyViewHolder extends RecyclerView.ViewHolder {
 

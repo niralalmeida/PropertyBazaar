@@ -14,8 +14,19 @@
     <string name="input_area">Enter Area in sq feet</string>
     <string name="input_city">Enter City</string>
     <string name="input_rooms">Enter Number of Rooms</string>
+    <string-array name="filterable_city_array">
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Bangalore</item>
+        <item>Delhi</item>
+        <item>Chennai</item>
+        <item>All</item>
+    </string-array>
     <string-array name="city_array">
         <item>Mumbai</item>
         <item>Pune</item>
+        <item>Bangalore</item>
+        <item>Delhi</item>
+        <item>Chennai</item>
     </string-array>
 </resources>

@@ -1,23 +1,25 @@
-package com.example.rudolph.propertybazaar;
+package layout;
 
-import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.os.Bundle;
-import android.support.design.widget.BottomNavigationView;
+import android.app.Fragment;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
+import com.example.rudolph.propertybazaar.R;
 import com.example.rudolph.propertybazaar.adapters.PropertyAdapter;
 import com.example.rudolph.propertybazaar.models.Property;
 import com.example.rudolph.propertybazaar.models.PropertyResponse;
@@ -30,77 +32,59 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class BrowseProperty extends Activity {
 
-    private BottomNavigationView bottomNavigationView;
+public class BrowseProperty extends Fragment {
+
     private ImageView internetError;
-    private PropertyAdapter adapter;
+    private PropertyAdapter adapter = null;
+    private RecyclerView recyclerView;
+    private FloatingActionButton floatingActionButton;
 
-    public static final String TAG = BrowseProperty.class.getSimpleName();
+    public BrowseProperty() {
+        // Required empty public constructor
+    }
+
+    public static BrowseProperty newInstance() {
+        return new BrowseProperty();
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_browse_property);
-
-        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bniv_bottom_nav);
-        BottomNavigationViewHelper.removeShiftMode(bottomNavigationView);
-
-        internetError = (ImageView) findViewById(R.id.iv_not_connected_internet);
-
-        final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rv_property_list);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        APIInterface apiService = APIClient.getClient().create(APIInterface.class);
-
-        Call<PropertyResponse> call = apiService.getProperties();
-
-        call.enqueue(new Callback<PropertyResponse>() {
-            @Override
-            public void onResponse(Call<PropertyResponse> call, Response<PropertyResponse> response) {
-                int statusCode = response.code();
-                List<Property> properties = response.body().getResults();
-                internetError.setVisibility(View.INVISIBLE);
-                adapter = new PropertyAdapter(properties, R.layout.propery_card, getApplicationContext());
-                recyclerView.setAdapter(adapter);
-            }
-
-            @Override
-            public void onFailure(Call<PropertyResponse> call, Throwable t) {
-                internetError.setVisibility(View.VISIBLE);
-                Log.e(TAG, t.toString());
-            }
-        });
-
+        if (getArguments() != null) {
+            // Get Arguments here
+        }
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.browse_property_searchmenu, menu);
-        return true;
-    }
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        final View view = inflater.inflate(R.layout.fragment_browse_property, container, false);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-
-            case R.id.mi_filter_list:
-                final Dialog dialog = new Dialog(this,android.R.style.Theme_Material_Light_DarkActionBar);
+        internetError = (ImageView) view.findViewById(R.id.iv_not_connected_internet);
+        floatingActionButton = (FloatingActionButton) view.findViewById(R.id.fab_filter_property);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final Dialog dialog = new Dialog(getContext(), android.R.style.Theme_Material_Light_DarkActionBar);
                 dialog.setContentView(R.layout.filter_property_dialog);
 
                 Spinner spinner = (Spinner) dialog.findViewById(R.id.spin_city);
-                ArrayAdapter<CharSequence> arrayAdapter = ArrayAdapter.createFromResource(this, R.array.city_array, android.R.layout.simple_spinner_item);
+                ArrayAdapter<CharSequence> arrayAdapter = ArrayAdapter.createFromResource(getContext(), R.array.filterable_city_array, android.R.layout.simple_spinner_item);
                 arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 spinner.setAdapter(arrayAdapter);
 
                 dialog.setCancelable(true);
-                dialog.setTitle("Property Constraints");
+                dialog.setTitle("Filter Properties");
                 Button filter = (Button) dialog.findViewById(R.id.b_filterButton);
                 filter.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+
+                        if (adapter == null) {
+                            dialog.dismiss();
+                            Toast.makeText(getContext(), "Nothing to filter", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
 
                         EditText bedrooms, bathrooms, garages, rooms, price, area;
                         Spinner city;
@@ -132,11 +116,43 @@ public class BrowseProperty extends Activity {
                 });
 
                 dialog.show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+            }
+        });
 
-        }
+        recyclerView = (RecyclerView) view.findViewById(R.id.rv_property_list);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        APIInterface apiService = APIClient.getClient().create(APIInterface.class);
+
+        Call<PropertyResponse> call = apiService.getProperties();
+
+        call.enqueue(new Callback<PropertyResponse>() {
+            @Override
+            public void onResponse(Call<PropertyResponse> call, Response<PropertyResponse> response) {
+                List<Property> properties = response.body().getResults();
+                internetError.setVisibility(View.GONE);
+                adapter = new PropertyAdapter(properties, R.layout.propery_card, getContext());
+                recyclerView.setAdapter(adapter);
+            }
+
+            @Override
+            public void onFailure(Call<PropertyResponse> call, Throwable t) {
+                internetError.setVisibility(View.VISIBLE);
+                Log.e(BrowseProperty.class.getSimpleName(), t.toString());
+            }
+        });
+
+        return view;
     }
+
+    @Override
+    public void onAttach(final Context context) {
+        super.onAttach(context);
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+    }
+
 }
