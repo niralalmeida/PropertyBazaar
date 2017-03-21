@@ -14,13 +14,14 @@
     <string name="input_area">Enter Area in sq feet</string>
     <string name="input_city">Enter City</string>
     <string name="input_rooms">Enter Number of Rooms</string>
+    <string name="submit">Submit</string>
     <string-array name="filterable_city_array">
-        <item>Mumbai</item>
+        <item>All</item>
         <item>Pune</item>
         <item>Bangalore</item>
         <item>Delhi</item>
         <item>Chennai</item>
-        <item>All</item>
+        <item>Mumbai</item>
     </string-array>
     <string-array name="city_array">
         <item>Mumbai</item>
@@ -29,4 +30,18 @@
         <item>Delhi</item>
         <item>Chennai</item>
     </string-array>
+    <string-array name="filterable_property_type_array">
+        <item>All</item>
+        <item>Bungalow</item>
+        <item>Apartment</item>
+        <item>Villa</item>
+    </string-array>
+    <string-array name="property_type_array">
+        <item>Bungalow</item>
+        <item>Apartment</item>
+        <item>Villa</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

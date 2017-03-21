@@ -51,9 +51,6 @@ public class BrowseProperty extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            // Get Arguments here
-        }
     }
 
     @Override
@@ -73,6 +70,11 @@ public class BrowseProperty extends Fragment {
                 arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 spinner.setAdapter(arrayAdapter);
 
+                Spinner property_spinner = (Spinner) dialog.findViewById(R.id.spin_property_type);
+                ArrayAdapter<CharSequence> arrayAdapter2 = ArrayAdapter.createFromResource(getContext(), R.array.filterable_property_type_array, android.R.layout.simple_spinner_item);
+                arrayAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                property_spinner.setAdapter(arrayAdapter2);
+
                 dialog.setCancelable(true);
                 dialog.setTitle("Filter Properties");
                 Button filter = (Button) dialog.findViewById(R.id.b_filterButton);
@@ -87,7 +89,7 @@ public class BrowseProperty extends Fragment {
                         }
 
                         EditText bedrooms, bathrooms, garages, rooms, price, area;
-                        Spinner city;
+                        Spinner city, propertyType;
 
                         bedrooms = (EditText) dialog.findViewById(R.id.et_bedrooms);
                         bathrooms = (EditText) dialog.findViewById(R.id.et_bathrooms);
@@ -96,10 +98,11 @@ public class BrowseProperty extends Fragment {
                         price = (EditText) dialog.findViewById(R.id.et_price);
                         area = (EditText) dialog.findViewById(R.id.et_area);
                         city = (Spinner) dialog.findViewById(R.id.spin_city);
+                        propertyType = (Spinner) dialog.findViewById(R.id.spin_property_type);
 
                         Property constraint = new Property("", "", "",
                                 city.getSelectedItem().toString(),
-                                "",
+                                propertyType.getSelectedItem().toString(),
                                 !TextUtils.isEmpty(rooms.getText()) ? Integer.parseInt(rooms.getText().toString()) : 0,
                                 !TextUtils.isEmpty(bathrooms.getText()) ? Integer.parseInt(bathrooms.getText().toString()) : 0,
                                 !TextUtils.isEmpty(bedrooms.getText()) ? Integer.parseInt(bedrooms.getText().toString()) : 0,

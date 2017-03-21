@@ -122,6 +122,7 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
                     && (property.getBedrooms() >= p.getBedrooms())
                     && (property.getGarages() >= p.getGarages())
                     && (property.getPrice() <= p.getPrice())
+                    && p.getPropertytype().equals("All") || p.getPropertytype().equals(property.getPropertytype())
                     && (property.getRooms() >= p.getRooms())
                     && p.getCity().equals("All") || p.getCity().equals(property.getCity())) {
 

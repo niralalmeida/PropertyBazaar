@@ -21,15 +21,10 @@
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
             android:id="@+id/rv_property_list">
 
         </android.support.v7.widget.RecyclerView>
-        
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:visibility="invisible"/>
         
         <android.support.design.widget.FloatingActionButton
             android:layout_width="wrap_content"
@@ -43,7 +38,7 @@
             android:layout_alignParentRight="true"
             android:src="@drawable/ic_filter_list_black_24dp"
             app:fabSize="normal"
-            app:backgroundTint="@color/blue_grey" />
+            app:backgroundTint="@color/blue" />
 
     </RelativeLayout>
 
