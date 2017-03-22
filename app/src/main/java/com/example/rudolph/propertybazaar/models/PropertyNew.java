@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by Rudolph Almeida on 3/13/2017.
  */
 
-public class NewProperty {
+public class PropertyNew {
 
     @SerializedName("title")
     private String title;
@@ -44,7 +44,15 @@ public class NewProperty {
     @SerializedName("image")
     private String image;
 
-    public NewProperty(String title, String description, String address, String city, int garages, int bedrooms, int bathrooms, int area, int price, int rooms, String propertytype, String image) {
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public PropertyNew(String title, String description, String address, String city, int garages, int bedrooms, int bathrooms, int area, int price, int rooms, String propertytype, String image) {
         this.title = title;
         this.description = description;
         this.address = address;
@@ -57,6 +65,7 @@ public class NewProperty {
         this.rooms = rooms;
         this.propertytype = propertytype;
         this.image = image;
+
     }
 
     public String getTitle() {
@@ -145,13 +154,5 @@ public class NewProperty {
 
     public void setPropertytype(String propertytype) {
         this.propertytype = propertytype;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
     }
 }

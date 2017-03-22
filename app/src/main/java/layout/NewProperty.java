@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import com.example.rudolph.propertybazaar.R;
@@ -43,6 +44,14 @@ public class NewProperty extends Fragment {
         ArrayAdapter<CharSequence> arrayAdapter2 = ArrayAdapter.createFromResource(getContext(), R.array.property_type_array, android.R.layout.simple_spinner_item);
         arrayAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         property_spinner.setAdapter(arrayAdapter2);
+
+        Button submit = (Button) view.findViewById(R.id.b_submit);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO Implement form submit onclick handler
+            }
+        });
 
         return view;
     }
