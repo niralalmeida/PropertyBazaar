@@ -21,13 +21,76 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:src="@drawable/ic_text_fields_black_24dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_title"
+                android:inputType="text"
+                android:id="@+id/et_new_title">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_text_fields_black_24dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_description"
+                android:inputType="textMultiLine"
+                android:id="@+id/et_new_description">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_place_black_24dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_address"
+                android:inputType="textPostalAddress"
+                android:id="@+id/et_new_address">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:src="@drawable/ic_attach_money_black_24dp"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/input_price"
                 android:inputType="numberDecimal"
-                android:id="@+id/et_price">
+                android:id="@+id/et_new_price">
             </EditText>
 
         </LinearLayout>
@@ -49,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/input_bathrooms"
                 android:inputType="numberDecimal"
-                android:id="@+id/et_bathrooms">
+                android:id="@+id/et_new_bathrooms">
             </EditText>
 
         </LinearLayout>
@@ -71,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/input_bedrooms"
                 android:inputType="numberDecimal"
-                android:id="@+id/et_bedrooms">
+                android:id="@+id/et_new_bedrooms">
             </EditText>
 
         </LinearLayout>
@@ -93,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/input_garages"
                 android:inputType="numberDecimal"
-                android:id="@+id/et_garages">
+                android:id="@+id/et_new_garages">
             </EditText>
 
         </LinearLayout>
@@ -115,7 +178,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/input_rooms"
                 android:inputType="numberDecimal"
-                android:id="@+id/et_rooms">
+                android:id="@+id/et_new_rooms">
             </EditText>
 
         </LinearLayout>
@@ -136,7 +199,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/input_area"
                 android:inputType="numberDecimal"
-                android:id="@+id/et_area">
+                android:id="@+id/et_new_area">
             </EditText>
 
         </LinearLayout>
@@ -157,7 +220,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/input_city"
-                android:id="@+id/spin_city">
+                android:id="@+id/spin_new_city">
             </Spinner>
 
         </LinearLayout>
@@ -178,24 +241,47 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/input_city"
-                android:id="@+id/spin_property_type">
+                android:id="@+id/spin_new_property_type">
             </Spinner>
 
         </LinearLayout>
 
-        <Button
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp"
-            android:text="@string/submit"
-            android:background="@color/black"
-            android:textColor="@color/white"
-            android:id="@+id/b_submit"/>
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/choose"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:id="@+id/b_choose" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/submit"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:id="@+id/b_submit" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 

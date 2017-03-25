@@ -42,4 +42,8 @@
         <item>Villa</item>
     </string-array>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose">Choose</string>
+    <string name="input_title">Enter Title</string>
+    <string name="input_description">Enter Description</string>
+    <string name="input_address">Enter Address</string>
 </resources>

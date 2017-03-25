@@ -116,15 +116,14 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
         }
 
         for (Property property: allProperties) {
-            // FIXME : Filtering based on cities
             if ((property.getArea() >= p.getArea())
                     && (property.getBathrooms() >= p.getBathrooms())
                     && (property.getBedrooms() >= p.getBedrooms())
                     && (property.getGarages() >= p.getGarages())
                     && (property.getPrice() <= p.getPrice())
-                    && p.getPropertytype().equals("All") || p.getPropertytype().equals(property.getPropertytype())
+                    && (p.getPropertytype().equals("All") || p.getPropertytype().equals(property.getPropertytype()))
                     && (property.getRooms() >= p.getRooms())
-                    && p.getCity().equals("All") || p.getCity().equals(property.getCity())) {
+                    && (p.getCity().equals("All") || p.getCity().equals(property.getCity()))) {
 
                 properties.add(property);
             }

@@ -1,5 +1,7 @@
 package com.example.rudolph.propertybazaar.models;
 
+import android.util.Log;
+
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -189,4 +191,5 @@ public class Property {
     public void setPrice(int price) {
         this.price = price;
     }
+
 }
