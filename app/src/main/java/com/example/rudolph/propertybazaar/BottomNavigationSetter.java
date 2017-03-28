@@ -49,6 +49,7 @@ public class BottomNavigationSetter {
                 }
 
                 final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
                 fragmentTransaction.replace(R.id.activity_property_bazaar, fragment).commit();
 
                 return true;

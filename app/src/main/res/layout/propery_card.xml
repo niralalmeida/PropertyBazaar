@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
     android:layout_marginLeft="8dp"
     android:layout_marginRight="8dp">
 
@@ -23,7 +23,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
@@ -53,7 +53,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="3dp"
-                        android:tint="@color/grey"
+                        android:tint="@color/blue_grey"
                         android:src="@drawable/ic_attach_money_black_24dp" />
 
                     <TextView
@@ -76,7 +76,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:tint="@color/grey"
+                    android:tint="@color/blue_grey"
                     android:src="@drawable/ic_place_black_24dp" />
 
                 <TextView
@@ -99,7 +99,7 @@
                     android:layout_weight="1"
                     android:layout_margin="3dp"
                     android:layout_height="wrap_content"
-                    android:tint="@color/black"
+                    android:tint="@color/blue_grey"
                     android:src="@drawable/ic_hotel_bed" />
 
                 <TextView
@@ -108,6 +108,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <ImageView
@@ -115,7 +116,7 @@
                     android:layout_margin="3dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:tint="@color/black"
+                    android:tint="@color/blue_grey"
                     android:src="@drawable/ic_hotel_bath_shower" />
 
                 <TextView
@@ -124,6 +125,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <ImageView
@@ -131,7 +133,7 @@
                     android:layout_margin="3dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:tint="@color/black"
+                    android:tint="@color/blue_grey"
                     android:src="@drawable/ic_car_2" />
 
                 <TextView
@@ -140,6 +142,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <ImageView
@@ -147,7 +150,7 @@
                     android:layout_margin="3dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:tint="@color/black"
+                    android:tint="@color/blue_grey"
                     android:src="@drawable/ic_couch" />
 
                 <TextView
@@ -155,6 +158,7 @@
                     android:layout_margin="3dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:id="@+id/tv_property_rooms" />
 
@@ -163,6 +167,7 @@
                     android:layout_margin="3dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:tint="@color/blue_grey"
                     android:src="@drawable/ic_map_black_24dp" />
 
                 <TextView
@@ -170,6 +175,7 @@
                     android:layout_margin="3dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:id="@+id/tv_property_area" />
 
@@ -180,7 +186,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
@@ -219,8 +225,43 @@
                 android:textColor="@color/black"
                 android:id="@+id/tv_owner_email" />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/Email"
+                    android:padding="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/b_email_owner"
+                    android:textColor="@color/blue"
+                    style="?android:borderlessButtonStyle" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/Locate"
+                    android:padding="8dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/b_locate_property"
+                    android:textColor="@color/blue"
+                    style="?android:borderlessButtonStyle" />
+
+            </LinearLayout>
+
+
         </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
     </LinearLayout>
-
-
 </android.support.v7.widget.CardView>

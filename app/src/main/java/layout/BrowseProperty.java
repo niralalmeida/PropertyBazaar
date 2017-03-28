@@ -7,6 +7,7 @@ import android.app.Fragment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -56,6 +57,8 @@ public class BrowseProperty extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_browse_property, container, false);
+
+        getActivity().getActionBar().setTitle(Html.fromHtml("<font color=\"#ffffff\">Browse Property</font>"));
 
         internetError = (ImageView) view.findViewById(R.id.iv_not_connected_internet);
         floatingActionButton = (FloatingActionButton) view.findViewById(R.id.fab_filter_property);

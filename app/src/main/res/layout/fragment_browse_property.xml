@@ -38,7 +38,7 @@
             android:layout_alignParentRight="true"
             android:src="@drawable/ic_filter_list_black_24dp"
             app:fabSize="normal"
-            app:backgroundTint="@color/blue" />
+            app:backgroundTint="@color/accent" />
 
     </RelativeLayout>
 

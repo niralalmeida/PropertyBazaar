@@ -1,12 +1,15 @@
 package com.example.rudolph.propertybazaar.adapters;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.transition.TransitionManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
@@ -22,6 +25,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -80,15 +84,41 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
         holder.description.setText(properties.get(position).getDescription());
         holder.area.setText(Integer.toString(properties.get(position).getArea()));
 
+        holder.locateProperty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String map = "http://maps.google.co.in/maps?q=" + properties.get(position).getAddress();
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(map));
+                context.startActivity(intent);
+            }
+        });
+
         final String userUrl = properties.get(position).getOwner();
         int id = Integer.parseInt(userUrl.substring(46, userUrl.lastIndexOf('/')));
 
         Call<User> call = apiservice.getUser(id);
         call.enqueue(new Callback<User>() {
             @Override
-            public void onResponse(Call<User> call, Response<User> response) {
+            public void onResponse(Call<User> call, final Response<User> response) {
                 holder.owner_name.setText("Owner: " + response.body().getFirst_name() + " " + response.body().getLast_name());
                 holder.owner_email.setText("Email: " + response.body().getEmail());
+
+                holder.emailOwner.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                                "mailto",
+                                response.body().getEmail(),
+                                null
+                        ));
+                        intent.putExtra(Intent.EXTRA_SUBJECT, "Request for Site Tour");
+                        intent.putExtra(Intent.EXTRA_TEXT,
+                                "Hi Mr/Mrs " + response.body().getLast_name() +". I would like a tour of your property "
+                                        + holder.title.getText() + ". Please can we arrange dates for the same. Thank you");
+                        context.startActivity(intent);
+
+                    }
+                });
             }
 
             @Override
@@ -97,7 +127,7 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
             }
         });
 
-        Picasso.with(context).load(properties.get(position).getImage()).into(holder.cover);
+        Picasso.with(context).load(properties.get(position).getImage()).placeholder(R.drawable.placeholder).into(holder.cover);
 
     }
 
@@ -140,6 +170,7 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
         ImageView cover;
         TextView title, address, description, owner_name, owner_email;
         TextView bedrooms, bathrooms, garages, rooms, price, area;
+        Button emailOwner, locateProperty;
         LinearLayout detailView;
 
         public PropertyViewHolder(View v) {
@@ -157,6 +188,8 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
             owner_name = (TextView) v.findViewById(R.id.tv_owner_name);
             owner_email = (TextView) v.findViewById(R.id.tv_owner_email);
             detailView = (LinearLayout) v.findViewById(R.id.ll_detail_property_view);
+            emailOwner = (Button) v.findViewById(R.id.b_email_owner);
+            locateProperty = (Button) v.findViewById(R.id.b_locate_property);
         }
 
     }

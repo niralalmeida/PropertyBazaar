@@ -14,6 +14,7 @@ import android.app.Fragment;
 import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -69,6 +70,8 @@ public class NewProperty extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         final View fragmentview = inflater.inflate(R.layout.fragment_new_property, container, false);
+
+        getActivity().getActionBar().setTitle(Html.fromHtml("<font color=\"#ffffff\">New Property</font>"));
 
         Spinner city_spinner = (Spinner) fragmentview.findViewById(R.id.spin_new_city);
         ArrayAdapter<CharSequence> arrayAdapter = ArrayAdapter.createFromResource(getContext(), R.array.city_array, android.R.layout.simple_spinner_item);
