@@ -235,8 +235,7 @@
                     android:layout_height="36dp"
                     android:text="@string/Email"
                     android:padding="8dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_margin="8dp"
                     android:id="@+id/b_email_owner"
                     android:textColor="@color/blue"
                     style="?android:borderlessButtonStyle" />
@@ -246,9 +245,7 @@
                     android:layout_height="36dp"
                     android:text="@string/Locate"
                     android:padding="8dp"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_margin="8dp"
                     android:id="@+id/b_locate_property"
                     android:textColor="@color/blue"
                     style="?android:borderlessButtonStyle" />

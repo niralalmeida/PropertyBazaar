@@ -15,12 +15,14 @@ import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.rudolph.propertybazaar.R;
 import com.example.rudolph.propertybazaar.models.Property;
 import com.example.rudolph.propertybazaar.models.User;
 import com.example.rudolph.propertybazaar.rest.APIClient;
 import com.example.rudolph.propertybazaar.rest.APIInterface;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -127,7 +129,36 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
             }
         });
 
-        Picasso.with(context).load(properties.get(position).getImage()).placeholder(R.drawable.placeholder).into(holder.cover);
+        Picasso.with(context)
+                .load(properties.get(position).getImage())
+                .networkPolicy(NetworkPolicy.OFFLINE)
+                .placeholder(R.drawable.placeholder)
+                .fit().centerCrop()
+                .into(holder.cover, new com.squareup.picasso.Callback() {
+                    @Override
+                    public void onSuccess() {
+
+                    }
+
+                    @Override
+                    public void onError() {
+                        Picasso.with(context)
+                                .load(properties.get(position).getImage())
+                                .placeholder(R.drawable.placeholder)
+                                .fit().centerCrop()
+                                .into(holder.cover, new com.squareup.picasso.Callback() {
+                                    @Override
+                                    public void onSuccess() {
+
+                                    }
+
+                                    @Override
+                                    public void onError() {
+                                        Toast.makeText(context, "Image Loading Failed", Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+                    }
+                });
 
     }
 

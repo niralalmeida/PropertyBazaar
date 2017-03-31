@@ -65,7 +65,7 @@ public class BrowseProperty extends Fragment {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Dialog dialog = new Dialog(getContext(), android.R.style.Theme_Material_Light_DarkActionBar);
+                final Dialog dialog = new Dialog(getContext(), android.R.style.Theme_Material_Light);
                 dialog.setContentView(R.layout.filter_property_dialog);
 
                 Spinner spinner = (Spinner) dialog.findViewById(R.id.spin_city);
@@ -126,6 +126,9 @@ public class BrowseProperty extends Fragment {
         });
 
         recyclerView = (RecyclerView) view.findViewById(R.id.rv_property_list);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setItemViewCacheSize(10);
+        recyclerView.setDrawingCacheEnabled(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         APIInterface apiService = APIClient.getClient().create(APIInterface.class);

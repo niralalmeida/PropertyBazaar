@@ -10,4 +10,7 @@
     <color name="accent">#00C853</color>
     <color name="amber">#FF8500</color>
     <color name="icon_not_selected">#B2D7D2</color>
+    <color name="indigo_700">#303F9F</color>
+    <color name="primary_color">#006064</color>
+    <color name="fab_color">#2196F3</color>
 </resources>

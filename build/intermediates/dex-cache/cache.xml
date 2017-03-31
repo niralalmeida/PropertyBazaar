@@ -2,6 +2,24 @@
 <items version="2" >
 
     <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\10a3ab61fc3890d319f3ace66e8c6ccd072b68b0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fe5048800ba796ea82188aec8d6c690e7a48dffd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\c8768264c5a743c58dd49b92a3dc1a6d4472fee5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_15ce9100e83b850411f4e89dc812b7597774d435\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\rudol\.android\build-cache\92a31816db3bf3c17c1a3a6a5e79795e54b13fbf\output\jars\classes.jar"
         jumboMode="false"
@@ -9,6 +27,15 @@
         revision="25.0.2"
         sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
         <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\classes_039d32ad2dc6063b03e6cfb365c9d196f8b85a83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rudol\.android\build-cache\e5c242401aa738f3f5bc47220d8ad5543b438065\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\classes_33705e95437788e0126d29a0dc55a99dad9c0dd8.jar" />
     </item>
     <item
         is-multidex="true"
@@ -56,6 +83,15 @@
         <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\classes_c6abc3ceda8758a93e5b48b5002957fdc29745aa.jar" />
     </item>
     <item
+        is-multidex="true"
+        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e0bb896c10f6c171d2c4eea494584cb1c072a996\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\rudol\.android\build-cache\cf0b69a3bee9b0d5012690eb48466504c10fba7b\output\jars\classes.jar"
         jumboMode="false"
@@ -66,11 +102,29 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\2e68ef6c94d9dbc95459ab18bb1c75e154280f44\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1f5ab6d9e076b991bedbb3e29d3147d02acc85ed\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.0_99baddeb0692c15fd55194d068918d347df5064b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="042e992aef44acc380a3968fa8244560ff28fba3">
+        sha1="649dfe3c2abf49bac24fa5db6dcd6c69a3ed3a17">
         <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1c7b4724b67698d34245cb5f903f800396f3243f\classes.dex" />
     </item>
     <item
@@ -90,132 +144,6 @@
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\classes_837c37a6b5369fdb76fdaa63e5e82d5eb46a69dd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rudol\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_b8eb46a41f7210feddb42a7e3586ee6c79b8c3a4.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\.android\build-cache\292a8a6639b947e44249b8614569c545876a3574\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5d12e3aaacbaa408ee51481617cacaa7381b763c\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rudol\.android\build-cache\d62074367f67077550718310bb1fb13416c29b0d\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\classes_f7682fc33d8e9c1862c4a467df0889281f35cb20.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\.android\build-cache\1235a1307e3699bf4c09abe68a7115d4b03ac197\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_661ac76c59887a2e2fc6594ede180046ba5e95fc\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rudol\.android\build-cache\5558b50c81d1d7054b84a22a0ebcf31e11c499fb\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\classes_51253adb95c67bd45e83ad89c8cad1c31474557c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rudol\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.2.0\a09926806199499a20b2f5168779499abfa33342\converter-gson-2.2.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a09926806199499a20b2f5168779499abfa33342">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\converter-gson-2.2.0_639626b2f863d085f82118be347cef944c601b1c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rudol\.android\build-cache\5b97ae8943d91e27788d4c5882f71f3cc2f2716e\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\classes_360d868a311b4d459e3c7130f9a22fcd59bca042.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\.android\build-cache\6023ef832c73dce4ad751e4cbe6ba54ba752edbf\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2af6337dc3ffc957c780e374d5fd7438bb2d2ae3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\.android\build-cache\10a3ab61fc3890d319f3ace66e8c6ccd072b68b0\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fe5048800ba796ea82188aec8d6c690e7a48dffd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\.android\build-cache\c8768264c5a743c58dd49b92a3dc1a6d4472fee5\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="518768f3200963fbfec652f498da2c9d39245234">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_15ce9100e83b850411f4e89dc812b7597774d435\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rudol\.android\build-cache\e5c242401aa738f3f5bc47220d8ad5543b438065\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\classes_33705e95437788e0126d29a0dc55a99dad9c0dd8.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e0bb896c10f6c171d2c4eea494584cb1c072a996\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\.android\build-cache\2e68ef6c94d9dbc95459ab18bb1c75e154280f44\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1f5ab6d9e076b991bedbb3e29d3147d02acc85ed\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\rudol\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
-        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.0_99baddeb0692c15fd55194d068918d347df5064b\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -308,6 +236,33 @@
         <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_105e988a35f6b473088c9b5e1f6f9f6500b9a8d3\classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="C:\Users\rudol\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_b8eb46a41f7210feddb42a7e3586ee6c79b8c3a4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\292a8a6639b947e44249b8614569c545876a3574\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5d12e3aaacbaa408ee51481617cacaa7381b763c\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rudol\.android\build-cache\d62074367f67077550718310bb1fb13416c29b0d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\classes_f7682fc33d8e9c1862c4a467df0889281f35cb20.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\rudol\.android\build-cache\57a21c552bb4273a3eb09194864ba28d719b47cb\output\jars\classes.jar"
         jumboMode="true"
@@ -315,6 +270,24 @@
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_33f9b6500e55f1ae83ec534ff598470cf5bcaae3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\1235a1307e3699bf4c09abe68a7115d4b03ac197\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_661ac76c59887a2e2fc6594ede180046ba5e95fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rudol\.android\build-cache\5558b50c81d1d7054b84a22a0ebcf31e11c499fb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\classes_51253adb95c67bd45e83ad89c8cad1c31474557c.jar" />
     </item>
     <item
         is-multidex="true"
@@ -327,12 +300,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\rudol\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.4.0\40340c0748190fe897baf7bffbc1b282734294e5\okhttp-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.4.0_dd7847b5940547dfa0bab56837c16e66f25368e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\rudol\.android\build-cache\bb4a209176b384d16f3648899c82ff09a38e3501\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="09adf6e61abc0fe3b2cb5b1795a7033572475fad">
         <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4c538b25ac6a1d3a6117eff972c21746a24e0ae9\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rudol\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.2.0\a09926806199499a20b2f5168779499abfa33342\converter-gson-2.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a09926806199499a20b2f5168779499abfa33342">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\converter-gson-2.2.0_639626b2f863d085f82118be347cef944c601b1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rudol\.android\build-cache\5b97ae8943d91e27788d4c5882f71f3cc2f2716e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\pre-dexed\debug\classes_360d868a311b4d459e3c7130f9a22fcd59bca042.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\rudol\.android\build-cache\6023ef832c73dce4ad751e4cbe6ba54ba752edbf\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="C:\Users\rudol\AndroidStudioProjects\PropertyBazaar\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2af6337dc3ffc957c780e374d5fd7438bb2d2ae3\classes.dex" />
     </item>
 
 </items>

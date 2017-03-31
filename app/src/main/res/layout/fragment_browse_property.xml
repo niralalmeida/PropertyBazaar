@@ -38,7 +38,8 @@
             android:layout_alignParentRight="true"
             android:src="@drawable/ic_filter_list_black_24dp"
             app:fabSize="normal"
-            app:backgroundTint="@color/accent" />
+            android:tint="@color/white"
+            app:backgroundTint="@color/fab_color" />
 
     </RelativeLayout>
 
