@@ -12,6 +12,11 @@
         android:orientation="vertical"
         android:layout_centerInParent="true"
         android:id="@+id/ll_login_register_view">
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:src="@drawable/banner"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -24,6 +29,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/blue"
                 android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
                 android:minHeight="48dip"
                 android:minWidth="88dip"
                 android:clickable="true"
@@ -73,42 +79,51 @@
         android:id="@+id/ll_user_profile_view"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:layout_margin="10dp"
-            android:id="@+id/tv_user_full_name"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/grey"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="5dp"
-            android:textSize="15sp"
-            android:id="@+id/tv_user_email"/>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/blue"
-            android:layout_gravity="center_horizontal"
-            android:minHeight="48dip"
-            android:minWidth="88dip"
-            android:clickable="true"
-            android:id="@+id/b_logout">
+            android:orientation="vertical"
+            android:elevation="4dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:text="LOGOUT"/>
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:id="@+id/tv_user_full_name" />
 
-        </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:id="@+id/tv_user_email" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:layout_gravity="center_horizontal"
+                android:minHeight="48dip"
+                android:minWidth="88dip"
+                android:clickable="true"
+                android:id="@+id/b_logout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="LOGOUT" />
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"

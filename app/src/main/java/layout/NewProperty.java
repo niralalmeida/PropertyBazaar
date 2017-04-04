@@ -17,6 +17,7 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.v7.widget.CardView;
 import android.text.Html;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,7 +49,7 @@ import static android.app.Activity.RESULT_OK;
     public class NewProperty extends Fragment {
 
         private int PICK_IMAGE_REQUEST = 1;
-        Uri filePath;
+        Uri filePath = null;
 
 
     public NewProperty() {
@@ -109,17 +110,79 @@ import static android.app.Activity.RESULT_OK;
                 String currentUserName = sharedPreferences.getString("username", null);
 
                 EditText title = (EditText) fragmentview.findViewById(R.id.et_new_title);
+
+                if (TextUtils.isEmpty(title.getText())) {
+                    Toast.makeText(getContext(), "Title is required", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 EditText description = (EditText) fragmentview.findViewById(R.id.et_new_description);
+
+                if (TextUtils.isEmpty(description.getText())) {
+                    Toast.makeText(getContext(), "Description is required", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 EditText address = (EditText) fragmentview.findViewById(R.id.et_new_address);
+
+                if (TextUtils.isEmpty(address.getText())) {
+                    Toast.makeText(getContext(), "Address is required", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 EditText price = (EditText) fragmentview.findViewById(R.id.et_new_price);
+
+                if (TextUtils.isEmpty(price.getText())) {
+                    Toast.makeText(getContext(), "Price is required", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 EditText area = (EditText) fragmentview.findViewById(R.id.et_new_area);
+
+                if (TextUtils.isEmpty(area.getText())) {
+                    Toast.makeText(getContext(), "Area is required", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 EditText garages = (EditText) fragmentview.findViewById(R.id.et_new_garages);
+
+                if (TextUtils.isEmpty(garages.getText())) {
+                    Toast.makeText(getContext(), "Garages are required. Set to 0 if none", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 EditText bedrooms = (EditText) fragmentview.findViewById(R.id.et_new_bedrooms);
+
+                if (TextUtils.isEmpty(bedrooms.getText())) {
+                    Toast.makeText(getContext(), "Bedrooms are requied. Set to 0 if none", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 EditText bathrooms = (EditText) fragmentview.findViewById(R.id.et_new_bathrooms);
+
+                if (TextUtils.isEmpty(bathrooms.getText())) {
+                    Toast.makeText(getContext(), "Bathrooms are required. Set to 0 if none", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 EditText rooms = (EditText) fragmentview.findViewById(R.id.et_new_rooms);
+
+                if (TextUtils.isEmpty(rooms.getText())) {
+                    Toast.makeText(getContext(), "Rooms are required", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 Spinner city = (Spinner) fragmentview.findViewById(R.id.spin_new_city);
+
                 Spinner propertytype = (Spinner) fragmentview.findViewById(R.id.spin_new_property_type);
+
+                if (filePath == null) {
+                    Toast.makeText(getContext(), "Please select an image", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 String realFilePath = getRealPathFromURIPath(filePath, getContext());
+
                 File file = new File(realFilePath);
                 RequestBody imageBody = RequestBody.create(MediaType.parse("image/*"), file);
                 RequestBody titleBody = RequestBody.create(MediaType.parse("text/plain"), title.getText().toString());
