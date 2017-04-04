@@ -253,35 +253,49 @@
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
 
-            <Button
+            <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:text="@string/choose"
-                android:elevation="2dp"
-                android:background="@color/blue"
-                android:textColor="@color/white"
-                android:id="@+id/b_choose" />
+                android:minHeight="48dip"
+                android:minWidth="88dip"
+                android:clickable="true"
+                android:id="@+id/b_choose">
 
-            <Button
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="CHOOSE"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:text="@string/submit"
-                android:elevation="2dp"
-                android:background="@color/blue"
-                android:textColor="@color/white"
-                android:id="@+id/b_submit" />
+                android:minHeight="48dip"
+                android:minWidth="88dip"
+                android:clickable="true"
+                android:id="@+id/b_submit">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="SUBMIT"/>
+
+            </android.support.v7.widget.CardView>
 
         </LinearLayout>
 

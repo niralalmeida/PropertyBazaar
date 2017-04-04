@@ -6,6 +6,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -14,6 +15,7 @@ import android.app.Fragment;
 import android.os.Environment;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
+import android.support.v7.widget.CardView;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -43,14 +45,11 @@ import retrofit2.Response;
 import static android.app.Activity.RESULT_OK;
 
 
-public class NewProperty extends Fragment {
+    public class NewProperty extends Fragment {
 
-    private int PICK_IMAGE_REQUEST = 1;
-    Uri filePath;
-    // FIXME Get Token string and id for logged in user from storage
-    String authorization = "Token a1309659837210fa2746d7e1154a6e9dd22d28b1";
-    String currentUserId = "1";
-    String BASE_ADDRESS_OWNER = "http://rudolphalmeida.pythonanywhere.com/user/";
+        private int PICK_IMAGE_REQUEST = 1;
+        Uri filePath;
+
 
     public NewProperty() {
         // Required empty public constructor
@@ -73,6 +72,8 @@ public class NewProperty extends Fragment {
 
         getActivity().getActionBar().setTitle(Html.fromHtml("<font color=\"#ffffff\">New Property</font>"));
 
+        final SharedPreferences sharedPreferences = getActivity().getPreferences(Context.MODE_PRIVATE);
+
         Spinner city_spinner = (Spinner) fragmentview.findViewById(R.id.spin_new_city);
         ArrayAdapter<CharSequence> arrayAdapter = ArrayAdapter.createFromResource(getContext(), R.array.city_array, android.R.layout.simple_spinner_item);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -83,7 +84,7 @@ public class NewProperty extends Fragment {
         arrayAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         property_spinner.setAdapter(arrayAdapter2);
 
-        Button choose = (Button) fragmentview.findViewById(R.id.b_choose);
+        CardView choose = (CardView) fragmentview.findViewById(R.id.b_choose);
         choose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,10 +95,19 @@ public class NewProperty extends Fragment {
             }
         });
 
-        Button submit = (Button) fragmentview.findViewById(R.id.b_submit);
+        CardView submit = (CardView) fragmentview.findViewById(R.id.b_submit);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (!sharedPreferences.getBoolean("isLoggedIn", false)) {
+                    Toast.makeText(getContext(), "You need to login", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                String authorization = "Token " + sharedPreferences.getString("token", null);
+                String currentUserName = sharedPreferences.getString("username", null);
+
                 EditText title = (EditText) fragmentview.findViewById(R.id.et_new_title);
                 EditText description = (EditText) fragmentview.findViewById(R.id.et_new_description);
                 EditText address = (EditText) fragmentview.findViewById(R.id.et_new_address);
@@ -123,7 +133,7 @@ public class NewProperty extends Fragment {
                 RequestBody roomsBody = RequestBody.create(MediaType.parse("text/plain"), rooms.getText().toString());
                 RequestBody cityBody = RequestBody.create(MediaType.parse("text/plain"), city.getSelectedItem().toString());
                 RequestBody propertyTypeBody = RequestBody.create(MediaType.parse("text/plain"), propertytype.getSelectedItem().toString());
-                RequestBody owner = RequestBody.create(MediaType.parse(""), BASE_ADDRESS_OWNER + currentUserId + "/");
+                RequestBody owner = RequestBody.create(MediaType.parse("text/plain"), currentUserName);
                 APIInterface apiInterface = APIClient.getClient().create(APIInterface.class);
                 Call<Property> call = apiInterface.uploadProperty(
                         authorization,

@@ -95,10 +95,9 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
             }
         });
 
-        final String userUrl = properties.get(position).getOwner();
-        int id = Integer.parseInt(userUrl.substring(46, userUrl.lastIndexOf('/')));
+        final String username = properties.get(position).getOwner();
 
-        Call<User> call = apiservice.getUser(id);
+        Call<User> call = apiservice.getUser(username);
         call.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, final Response<User> response) {

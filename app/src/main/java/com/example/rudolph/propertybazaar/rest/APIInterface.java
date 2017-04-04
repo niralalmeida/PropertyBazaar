@@ -1,5 +1,6 @@
 package com.example.rudolph.propertybazaar.rest;
 
+import com.example.rudolph.propertybazaar.models.AuthenticationToken;
 import com.example.rudolph.propertybazaar.models.Property;
 import com.example.rudolph.propertybazaar.models.PropertyResponse;
 import com.example.rudolph.propertybazaar.models.User;
@@ -21,14 +22,28 @@ import retrofit2.http.Path;
 
 public interface APIInterface {
 
-    @GET("user/{id}/")
-    Call<User> getUser(@Path("id") int id);
+    @GET("user/{username}/")
+    Call<User> getUser(@Path("username") String username);
+
+    @FormUrlEncoded
+    @POST("user/")
+    Call<User> registerUser(
+            @Field("username") String username,
+            @Field("password") String password,
+            @Field("last_name") String last_name,
+            @Field("first_name") String first_name,
+            @Field("email") String email
+    );
 
     @GET("property/")
     Call<PropertyResponse> getProperties();
 
     @GET("property/{id}/")
     Call<Property> getProperty(@Path("id") int id);
+
+    @FormUrlEncoded
+    @POST("api-token-auth/")
+    Call<AuthenticationToken> getToken(@Field("username") String username, @Field("password") String password);
 
     @Multipart
     @POST("property/")

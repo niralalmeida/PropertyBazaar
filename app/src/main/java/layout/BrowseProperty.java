@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
@@ -80,7 +81,7 @@ public class BrowseProperty extends Fragment {
 
                 dialog.setCancelable(true);
                 dialog.setTitle("Filter Properties");
-                Button filter = (Button) dialog.findViewById(R.id.b_filterButton);
+                CardView filter = (CardView) dialog.findViewById(R.id.b_filterButton);
                 filter.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

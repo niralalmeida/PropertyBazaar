@@ -14,7 +14,11 @@
     <string name="input_area">Enter Area in sq feet</string>
     <string name="input_city">Enter City</string>
     <string name="input_rooms">Enter Number of Rooms</string>
+    <string name="input_username">Enter Username</string>
+    <string name="input_password">Enter Password</string>
     <string name="submit">SUBMIT</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
     <string-array name="filterable_city_array">
         <item>All</item>
         <item>Pune</item>

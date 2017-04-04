@@ -26,7 +26,7 @@ public class User {
     private String last_name;
 
     @SerializedName("properties")
-    private List<String> properties;
+    private List<Property> properties;
 
     public String getUsername() {
         return username;
@@ -48,7 +48,7 @@ public class User {
         return last_name;
     }
 
-    public List<String> getProperties() {
+    public List<Property> getProperties() {
         return properties;
     }
 }
