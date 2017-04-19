@@ -2,7 +2,9 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/sv_filter_dialog_layout"
+    android:padding="10dp">
 
     <LinearLayout
         android:orientation="vertical"
@@ -180,29 +182,6 @@
                 android:id="@+id/spin_property_type"></Spinner>
 
         </LinearLayout>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
-            android:minHeight="48dip"
-            android:minWidth="88dip"
-            android:clickable="true"
-            android:id="@+id/b_filterButton">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:text="FILTER"/>
-
-        </android.support.v7.widget.CardView>
 
     </LinearLayout>
 </ScrollView>

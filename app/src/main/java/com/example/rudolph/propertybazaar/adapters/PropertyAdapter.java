@@ -10,8 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -27,7 +25,6 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -86,7 +83,10 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
         holder.description.setText(properties.get(position).getDescription());
         holder.area.setText(Integer.toString(properties.get(position).getArea()));
 
-        holder.locateProperty.setOnClickListener(new View.OnClickListener() {
+        holder.action1.setText("EMAIL");
+        holder.action2.setText("LOCATE");
+
+        holder.action2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String map = "http://maps.google.co.in/maps?q=" + properties.get(position).getAddress();
@@ -104,7 +104,7 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
                 holder.owner_name.setText("Owner: " + response.body().getFirst_name() + " " + response.body().getLast_name());
                 holder.owner_email.setText("Email: " + response.body().getEmail());
 
-                holder.emailOwner.setOnClickListener(new View.OnClickListener() {
+                holder.action1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
@@ -200,7 +200,7 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
         ImageView cover;
         TextView title, address, description, owner_name, owner_email;
         TextView bedrooms, bathrooms, garages, rooms, price, area;
-        Button emailOwner, locateProperty;
+        Button action1, action2;
         LinearLayout detailView;
 
         public PropertyViewHolder(View v) {
@@ -218,8 +218,8 @@ public class PropertyAdapter extends RecyclerView.Adapter<PropertyAdapter.Proper
             owner_name = (TextView) v.findViewById(R.id.tv_owner_name);
             owner_email = (TextView) v.findViewById(R.id.tv_owner_email);
             detailView = (LinearLayout) v.findViewById(R.id.ll_detail_property_view);
-            emailOwner = (Button) v.findViewById(R.id.b_email_owner);
-            locateProperty = (Button) v.findViewById(R.id.b_locate_property);
+            action1 = (Button) v.findViewById(R.id.b_action1);
+            action2 = (Button) v.findViewById(R.id.b_action2);
         }
 
     }

@@ -8,12 +8,12 @@
     <string name="search">Search</string>
     <string name="filter_property">Filter Properties</string>
     <string name="input_price">Enter Price</string>
-    <string name="input_bedrooms">Enter Number of Bedrooms</string>
-    <string name="input_bathrooms">Enter Number of Bathrooms</string>
-    <string name="input_garages">Enter Number of Garages</string>
-    <string name="input_area">Enter Area in sq feet</string>
+    <string name="input_bedrooms">Enter Bedrooms</string>
+    <string name="input_bathrooms">Enter Bathrooms</string>
+    <string name="input_garages">Enter Garages</string>
+    <string name="input_area">Enter Area</string>
     <string name="input_city">Enter City</string>
-    <string name="input_rooms">Enter Number of Rooms</string>
+    <string name="input_rooms">Enter Rooms</string>
     <string name="input_username">Enter Username</string>
     <string name="input_password">Enter Password</string>
     <string name="submit">SUBMIT</string>

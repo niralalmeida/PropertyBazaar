@@ -4,9 +4,11 @@ import com.example.rudolph.propertybazaar.models.AuthenticationToken;
 import com.example.rudolph.propertybazaar.models.Property;
 import com.example.rudolph.propertybazaar.models.PropertyResponse;
 import com.example.rudolph.propertybazaar.models.User;
+import com.squareup.okhttp.Response;
 
 import okhttp3.RequestBody;
 import retrofit2.Call;
+import retrofit2.http.DELETE;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -40,6 +42,11 @@ public interface APIInterface {
 
     @GET("property/{id}/")
     Call<Property> getProperty(@Path("id") int id);
+
+    @DELETE("property/{id}/")
+    Call<Response> deleteProperty(@Header("Authorization") String token, @Path("id") int id);
+
+    // TODO Implement PATCH/PUT for properties
 
     @FormUrlEncoded
     @POST("api-token-auth/")

@@ -21,6 +21,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.rudolph.propertybazaar.R;
+import com.example.rudolph.propertybazaar.adapters.ProfilePropertyAdapter;
 import com.example.rudolph.propertybazaar.adapters.PropertyAdapter;
 import com.example.rudolph.propertybazaar.models.Property;
 import com.example.rudolph.propertybazaar.models.User;
@@ -86,7 +87,7 @@ public class UserProfile extends Fragment {
                     name.setText(response.body().getFirst_name() + " " + response.body().getLast_name());
                     email.setText(response.body().getEmail());
                     List<Property> properties = response.body().getProperties();
-                    PropertyAdapter adapter = new PropertyAdapter(properties, R.layout.propery_card, getContext());
+                    ProfilePropertyAdapter adapter = new ProfilePropertyAdapter(properties, R.layout.propery_card, getContext());
                     recyclerView.setAdapter(adapter);
                 }
 

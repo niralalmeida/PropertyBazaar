@@ -1,7 +1,9 @@
 package layout;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.design.widget.FloatingActionButton;
@@ -56,7 +58,7 @@ public class BrowseProperty extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_browse_property, container, false);
 
         getActivity().getActionBar().setTitle(Html.fromHtml("<font color=\"#ffffff\">Browse Property</font>"));
@@ -66,8 +68,11 @@ public class BrowseProperty extends Fragment {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Dialog dialog = new Dialog(getContext(), android.R.style.Theme_Material_Light);
-                dialog.setContentView(R.layout.filter_property_dialog);
+
+                LayoutInflater layoutInflater = LayoutInflater.from(getContext());
+                final View dialog = layoutInflater.inflate(R.layout.filter_property_dialog, (ViewGroup) view.findViewById(R.id.sv_filter_dialog_layout));
+
+                final AlertDialog.Builder db = new AlertDialog.Builder(getActivity());
 
                 Spinner spinner = (Spinner) dialog.findViewById(R.id.spin_city);
                 ArrayAdapter<CharSequence> arrayAdapter = ArrayAdapter.createFromResource(getContext(), R.array.filterable_city_array, android.R.layout.simple_spinner_item);
@@ -79,15 +84,13 @@ public class BrowseProperty extends Fragment {
                 arrayAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 property_spinner.setAdapter(arrayAdapter2);
 
-                dialog.setCancelable(true);
-                dialog.setTitle("Filter Properties");
-                CardView filter = (CardView) dialog.findViewById(R.id.b_filterButton);
-                filter.setOnClickListener(new View.OnClickListener() {
+                db.setView(dialog);
+                db.setTitle("Filter");
+                db.setCancelable(true);
+                db.setPositiveButton("FILTER", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(View view) {
-
+                    public void onClick(DialogInterface dialogInterface, int i) {
                         if (adapter == null) {
-                            dialog.dismiss();
                             Toast.makeText(getContext(), "Nothing to filter", Toast.LENGTH_SHORT).show();
                             return;
                         }
@@ -116,13 +119,10 @@ public class BrowseProperty extends Fragment {
                                 !TextUtils.isEmpty(price.getText()) ? Integer.parseInt(price.getText().toString()) : Integer.MAX_VALUE);
 
                         adapter.filterProperties(constraint);
-
-                        dialog.dismiss();
-
                     }
                 });
 
-                dialog.show();
+                db.show();
             }
         });
 
